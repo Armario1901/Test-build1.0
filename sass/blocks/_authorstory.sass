@@ -1,0 +1,120 @@
+.authorstory
+  padding: 76px 0 100px 0
+  .container
+    width: 1005px
+    flex-wrap: wrap
+  &-top
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    margin-bottom: 30px
+  &__title
+    font-weight: 700
+    width: 503px
+    margin-right: 83px
+  &__subtitle
+    margin-top: 10px
+  &__text
+    font-size: 18px
+    &-wrapper
+      width: 382px
+      padding-bottom: 6px
+  &__preview
+    position: relative
+    z-index: 5
+    width: 315px
+    height: 200px
+    margin-bottom: 22px
+    &1
+      width: 1005px
+      height: 380px
+  &__video
+    width: 315px
+    min-height: 280px
+    transition: all 0.5s
+    &:not(:last-child):not(:first-child)
+      margin-right: 30px
+    &:first-child
+      width: 1005px
+      height: 380px
+      margin-bottom: 30px
+      position: relative
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      width: 100%
+      position: relative
+    &-title
+      width: 80%
+      font-family: 'Roboto', sans-serif
+      font-weight: 500
+      font-size: 22px
+      color: #183B56
+    &-bottom
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-between
+    &-btn
+      position: absolute
+      z-index: 5
+    &:hover
+      box-shadow: 6px 6px 10px 1px #224a82
+  &__favorite
+    &-icon
+      width: 14px
+      height: 21px
+      cursor: pointer
+      transition: all 0.15s
+      &:hover
+        transform: scale(1.5)
+  &-video
+    position: absolute
+    width: 315px
+    height: 200px
+    &1
+      width: 1005px
+      height: 380px
+      position: absolute
+      left: 0
+      top: 0
+    &2
+      left: 0
+      bottom: 80px
+    &3
+      left: 345px
+      bottom: 80px
+    &4
+      right: 0
+      bottom: 80px
+  &__play
+    position: absolute
+    z-index: 6
+    border: none
+    cursor: pointer
+    background-color: transparent
+    &1
+      justify-content: center
+      align-items: center
+      display: flex
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      background-color: #fff
+      right: 450px
+      top: 140px
+    &2
+      bottom: 155px
+      left: 145px
+    &3
+      bottom: 155px
+      left: 490px
+    &4
+      bottom: 155px
+      right: 142px
+    &-icon
+      width: 30px
+      height: 39px

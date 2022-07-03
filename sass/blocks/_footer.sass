@@ -1,0 +1,70 @@
+.footer
+  & .container
+    flex-wrap: wrap
+  &-wrapper
+    display: flex
+    width: 1042px
+    margin-bottom: 96px
+  &__img
+    width: 42px
+    height: 40px
+    transition: all 0.25s
+    cursor: pointer
+    &:hover
+      transform: scale(1.25)
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      width: 185px
+      height: 40px
+  &__logo
+    width: 90px
+    height: 28px
+    margin-bottom: 28px
+  &__text
+    width: 263px
+    margin-bottom: 32px
+    font-size: 15px
+    line-height: 28px
+  &__item
+    width: 165px
+    display: flex
+    flex-direction: column
+    &:not(:last-child)
+      margin-right: 30px
+    &-left
+      width: 263px
+      margin-right: 29px
+    &-title
+      color: #183B56
+      font-weight: 700
+      font-size: 18px
+      line-height: 24px
+      margin-bottom: 31px
+    &-link
+      line-height: 21px
+      transition: all 0.25s
+      &:hover
+        font-weight: 700
+        transform: scale(1.25)
+        color: #183B56
+      &:not(:last-child)
+        margin-bottom: 24px
+  &__bottom
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-right: auto
+    margin-left: auto
+    // align-items: center
+    width: 279px
+    flex-shrink: 0
+    margin-bottom: 80px
+    &-icon
+      width: 56px
+      height: 56px
+      margin-bottom: 24px
+    &-text
+      line-height: 21px
+      font-weight: 600
+      font-size: 16px

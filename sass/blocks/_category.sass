@@ -1,0 +1,59 @@
+.category
+  margin-bottom: 100px
+  .container
+    position: relative
+  &__slider
+    max-width: 1140px
+    &-wrapper
+      width: 1140px
+      display: flex
+    &-item
+      padding: 5px
+      width: 265px
+      height: 240px
+      border: 1px solid #ECEEF2
+      border-radius: 8px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      transition: all 0.35s
+      &:hover
+        transform: scale(1.05)
+    &-btn
+      position: absolute
+      width: 56px
+      height: 56px
+      border-radius: 2000px
+      background-color: #fff
+      box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+      border: none
+      z-index: 3
+      cursor: pointer
+      &--prev
+        top: 50%
+        transform: translateY(-50%)
+        left: -28px
+      &--next
+        top: 50%
+        transform: translateY(-50%)
+        right: -28px
+  &__img
+    width: 64px
+    height: 64px
+    margin: 40px 0
+    &-arr
+      width: 14px
+      height: 18px
+  &-title
+    font-family: Roboto, sans-serif
+    font-size: 22px
+    font-weight: 500
+    color: #183b56
+    margin-bottom: 12px
+  &-subtitle
+    font-family: Open-sans, sans-serif
+    font-size: 16px
+    font-weight: 400
+    color: #5A7184
+    margin-bottom: 30px
