@@ -175,6 +175,7 @@ header .container {
   width: 0;
 }
 .header-bottom {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1775,17 +1776,16 @@ header .container {
     margin-bottom: 70px;
   }
   .category__slider {
-    width: 580px;
+    max-width: 580px;
   }
   .category__slider-wrapper {
+    flex-wrap: wrap;
     width: 580px;
     height: 505px;
     justify-content: space-between;
-    flex-wrap: wrap;
     flex-direction: column;
   }
   .category__slider-item {
-    overflow: scrollbar;
     width: 260px !important;
     height: 240px;
     min-height: 240px;
@@ -1860,8 +1860,10 @@ header .container {
     padding: 60px 0;
   }
   .partners__title {
+    text-align: center;
     max-width: 85%;
   }
+
   .blog {
     margin-bottom: 60px;
   }

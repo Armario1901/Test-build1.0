@@ -5,50 +5,70 @@ const categorySlider = new Swiper(".category__slider", {
   spaceBetween: 26,
   speed: 450,
   autoHeight: false,
-  loop: false,
+  loop: true,
+  autoplay: true,
   navigation: {
     nextEl: ".category__slider-btn--next",
     prevEl: ".category__slider-btn--prev",
   },
   breakpoints: {
     1200: {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
       slidesPerView: 4,
       spaceBetween: 26,
     },
 
     980: {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
       slidesPerView: 4,
       spaceBetween: 10,
     },
 
     768: {
+      autoplay: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
       loop: false,
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 35,
       slidesPerGroup: 1,
     },
 
     586: {
+      autoplay: false,
+      loop: false,
       slidesPerGroup: 1,
-      slidesPerView: 2,
-      // loop: false,
-      spaceBetween: 30,
+      slidesPerView: 4,
+      spaceBetween: 35,
       slidesPerColumn: 2,
     },
 
     496: {
+      autoplay: false,
+      loop: false,
+      slidesPerView: 4,
       slidesPerGroup: 1,
-      // loop: false,
       spaceBetween: 40,
       slidesPerColumn: 2,
     },
 
     0: {
-      slidesPerGroup: 2,
+      autoplay: false,
+      loop: false,
+      slidesPerView: 4,
+      slidesPerGroup: 1,
       slidesPerColumn: 2,
-      // loop: false,
       spaceBetween: 10,
-      slidesPerColumn: 2,
     },
   },
 });
@@ -114,13 +134,6 @@ $(".authorstory__play1").on("click", function onYouTubeIframeAPIReady() {
 });
 
 let player2;
-let playerHeight;
-// if ($(window).width() <= "371") {
-//   playerHeight = 140;
-// } else {
-//   playerHeight = 200;
-// }
-console.log(playerHeight);
 $(".authorstory__play2").on("click", function onYouTubeIframeAPIReady() {
   player2 = new YT.Player("player2", {
     height: "200",
@@ -169,9 +182,6 @@ function openClose() {
   $(".header__mobile").toggleClass("left0");
   $(".header__menu-line").toggleClass("header__menu-line--mobile");
   $("body").toggleClass("lock");
-  // $(".header__navbar").toggleClass("header__navbar--mobile");
-  // $(".header__link").toggleClass("header__link--mobile");
-  // $(".header__button").toggleClass("header__button--mobile");
 }
 mobileBtn.on("click", function () {
   openClose();

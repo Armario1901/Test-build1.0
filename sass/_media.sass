@@ -515,15 +515,15 @@
   .category
     margin-bottom: 70px
     &__slider
-      width: 580px
+      max-width: 580px
+      // width: 100%
       &-wrapper
+        flex-wrap: wrap
         width: 580px
         height: 505px
         justify-content: space-between
-        flex-wrap: wrap
         flex-direction: column
       &-item
-        overflow: scrollbar
         width: 260px!important
         height: 240px
         min-height: 240px
@@ -579,7 +579,7 @@
   .partners
     padding: 60px 0
     &__title
-      tac
+      text-align: center
       max-width: 85%
   .blog
     margin-bottom: 60px
