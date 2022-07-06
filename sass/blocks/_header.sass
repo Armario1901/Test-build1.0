@@ -11,6 +11,7 @@ header
     margin-bottom: 69px
     width: 100%
     background-color: #ffffff
+    max-width: 1200px
   &__menu
     display: none
     width: 22px
@@ -27,10 +28,20 @@ header
   &__navbar
     max-width: 672px
     padding: 13px 0
+    display: flex
+    align-items: flex-start
+    vertical-align: baseline
   &__logo
+    display: flex
+    align-self: flex-start
+    flex-shrink: 0
     width: 90px
     height: 28px
+    margin-top: 20px
   &__link
+    width: 30%
+    max-width: 125px
+    display: inline-block
     position: relative
     font-family: 'Open Sans', sans-serif
     font-weight: 600
@@ -39,6 +50,8 @@ header
     text-decoration: none
     &:not(:first-child):not(:last-child)
       margin-left: 15px
+    &:not(:last-child)
+      margin-top: 15px
     &::before
       content: ""
       position: absolute
@@ -63,12 +76,17 @@ header
     height: 100%
     transition: all 0.5s
   &__button
-    display: inline-flex
-    border: 2px solid #1565D8
+    display: inline-block
+    flex-shrink: 0
+    padding: 13px 27px
     border-radius: 8px
+    border: 2px solid #1565D8
     color: #1565D8
     font-weight: 700
-    padding: 13px 27px
+    width: 150px
+    max-width: 150px
+    min-height: 50px
+    text-align: center
     margin: 0 0 0 37px
     transition: all 0.35s
     &:hover
@@ -78,15 +96,10 @@ header
       text-decoration: none
     &::before
       width: 0
-    // &--mobile
-    //   color: #ffffff
-    //   border: none
-    //   font-weight: 600
-    //   font-size: 18px
-    //   padding: 18px
   &-bottom
     display: flex
     justify-content: space-between
+    align-items: flex-start
   &-image
     display: flex
     justify-content: center
@@ -101,6 +114,11 @@ header
       &:hover
         transform: scale(1.25)
 .book
+  &__link
+    display: inline-block
+    max-width: 235px
+    min-height: 58px
+    text-align: center
   &-info
     max-width: 585px
     margin-right: 67px
@@ -108,26 +126,23 @@ header
       width: 469px
       display: flex
       justify-content: space-between
+      align-items: flex-start
     &__buy-link
-      display: flex
-      justify-content: center
-      align-items: center
       text-transform: uppercase
+      width: 209px
       max-width: 209px
       font-size: 16px
       color: #ffffff
       background-color: #1565D8
-      padding: 18px 34px
+      padding: 18px 4px
       &:hover
         transform: scale(1.15)
     &__read-link
-      display: flex
       text-transform: uppercase
-      justify-content: center
-      align-items: center
+      width: 234px
       max-width: 234px
       font-size: 18px
-      padding: 16px 48px
+      padding: 16px 10px
       border-color: #1565D8
       &:hover
         transform: scale(1.15)
@@ -137,6 +152,7 @@ header
     &_yellow
       color: #FAAD13
   &-subtitle
+    max-width: 470px
     text-transform: uppercase
     font-family: 'Roboto', sans-serif
     font-size: 20px
@@ -151,4 +167,5 @@ header
     max-width: 585px
     margin-bottom: 56px
     &__text
+      max-width: 470px
       line-height: 32px

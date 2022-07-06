@@ -14,6 +14,7 @@
     width: 503px
     margin-right: 83px
   &__subtitle
+    max-width: 85%
     margin-top: 10px
   &__text
     font-size: 18px
@@ -21,7 +22,6 @@
       width: 382px
       padding-bottom: 6px
   &__preview
-    position: relative
     z-index: 5
     width: 315px
     height: 200px
@@ -33,19 +33,18 @@
     width: 315px
     min-height: 280px
     transition: all 0.5s
+    position: relative
     &:not(:last-child):not(:first-child)
       margin-right: 30px
     &:first-child
       width: 1005px
       height: 380px
       margin-bottom: 30px
-      position: relative
     &-wrapper
       display: flex
       flex-wrap: wrap
       flex-direction: row
       width: 100%
-      position: relative
     &-title
       width: 80%
       font-family: 'Roboto', sans-serif
@@ -56,7 +55,7 @@
       display: flex
       flex-direction: row
       flex-wrap: wrap
-      align-items: center
+      align-items: flex-start
       justify-content: space-between
     &-btn
       position: absolute
@@ -71,25 +70,6 @@
       transition: all 0.15s
       &:hover
         transform: scale(1.5)
-  &-video
-    position: absolute
-    width: 315px
-    height: 200px
-    &1
-      width: 1005px
-      height: 380px
-      position: absolute
-      left: 0
-      top: 0
-    &2
-      left: 0
-      bottom: 80px
-    &3
-      left: 345px
-      bottom: 80px
-    &4
-      right: 0
-      bottom: 80px
   &__play
     position: absolute
     z-index: 6
@@ -105,16 +85,16 @@
       border-radius: 50%
       background-color: #fff
       right: 450px
-      top: 140px
+      top: 150px
     &2
-      bottom: 155px
+      top: 90px
       left: 145px
     &3
-      bottom: 155px
-      left: 490px
+      top: 90px
+      left: 145px
     &4
-      bottom: 155px
-      right: 142px
+      top: 90px
+      left: 145px
     &-icon
       width: 30px
       height: 39px

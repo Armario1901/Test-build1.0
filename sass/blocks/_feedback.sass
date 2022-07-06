@@ -10,25 +10,29 @@
     padding: 60px 0 80px
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: flex-start
   &__title
+    z-index: 10
+    max-width: 50%
     color: #fff
     width: 393px
     font-size: 36px
   &__form
+    max-width: 447px
     width: 447px
     position: relative
     display: flex
     align-items: center
     z-index: 5
     transition: all 0.35s
-    &:hover        
-      transform: scale(1.15)  
+    &:hover
+      transform: scale(1.15)
     &-input
-      width: 100%
+      max-width: 447px
+      width: 447px
       border-radius: 8px
       border: none
-      padding: 17px 0 17px 48px
+      padding: 17px 180px 17px 48px
       font-weight: 600
       color: #959EAD
     &-img
@@ -37,6 +41,11 @@
       width: 16px
       height: 18px
     &-btn
+      display: inline-block
+      max-width: 163px
+      min-height: 48px
+      width: 163px
+      text-align: center
       position: absolute
       right: 4px
       background-color: #FAAD13
@@ -55,9 +64,7 @@
       z-index: -1
     &::after
       left: -420px
-      // opacity: 0
     &::before
       right: 200px
       bottom: -500px
       transform: rotate(180deg)
-  

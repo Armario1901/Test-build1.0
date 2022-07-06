@@ -6,13 +6,16 @@
     align-items: center
     flex-wrap: wrap
   &__title
+    max-width: 400px
     font-size: 36px
     color: #ffffff
   &__btn
     &-wrapper
       width: 140px
-      display: flex
       justify-content: space-between
+      flex-shrink: 0
+      display: flex
+      max-width: 140px
   &__slider
     width: 1140px
     margin-top: 56px
@@ -28,7 +31,7 @@
       overflow: hidden
       transition: all 0.4s
       &:hover
-        transform: scale(0.75)
+        transform: scale(0.95)
     &-img
       width: 100%
       height: 100%
@@ -46,4 +49,4 @@
         transform: scale(1.25)
       &--prev
         border-color: #5A7184
-        margin-right: 24px  
+        margin-right: 24px

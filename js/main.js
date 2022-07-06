@@ -115,15 +115,15 @@ $(".authorstory__play1").on("click", function onYouTubeIframeAPIReady() {
 
 let player2;
 let playerHeight;
-if ($(window).width() <= "371") {
-  playerHeight = 140;
-} else {
-  playerHeight = 200;
-}
+// if ($(window).width() <= "371") {
+//   playerHeight = 140;
+// } else {
+//   playerHeight = 200;
+// }
 console.log(playerHeight);
 $(".authorstory__play2").on("click", function onYouTubeIframeAPIReady() {
   player2 = new YT.Player("player2", {
-    height: "playerHeight",
+    height: "200",
     width: "100%",
     videoId: "DfA2BKPOhCA",
     events: {
@@ -137,7 +137,7 @@ $(".authorstory__play2").on("click", function onYouTubeIframeAPIReady() {
 
 $(".authorstory__play3").on("click", function onYouTubeIframeAPIReady() {
   player3 = new YT.Player("player3", {
-    height: "playerHeight",
+    height: "200",
     width: "100%",
     videoId: "y_QVhswyKro",
     events: {
@@ -150,7 +150,7 @@ $(".authorstory__play3").on("click", function onYouTubeIframeAPIReady() {
 
 $(".authorstory__play4").on("click", function onYouTubeIframeAPIReady() {
   player4 = new YT.Player("player4", {
-    height: "playerHeight",
+    height: "200",
     width: "100%",
     videoId: "BjX3FHW-7EQ",
     events: {
